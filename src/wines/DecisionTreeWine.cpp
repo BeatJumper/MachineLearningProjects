@@ -137,7 +137,7 @@ vector<DataPoint> loadDataset(const string& filename) {
         DataPoint dataPoint;
         int label;
         ss >> label;
-        dataPoint.label = label - 1; // ����Ϊ 0-based label
+        dataPoint.label = label - 1; // 使用0-based label
         double value;
         while (ss >> value) {
             dataPoint.features.push_back(value);
